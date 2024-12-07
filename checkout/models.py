@@ -30,7 +30,7 @@ class Order(models.Model):
         Generate a random, unique order number using UUID
         """
         return uuid.uuid4().hex.upper()
-    
+
     def update_total(self):
         """
         Update grand total each time a line is added, accounting for delivery costs
@@ -53,7 +53,7 @@ class Order(models.Model):
 
     def __str__(self):
         return self.order_number
-        
+
 
 class OrderLineItem(models.Model):
     order = models.ForeignKey(Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems')
