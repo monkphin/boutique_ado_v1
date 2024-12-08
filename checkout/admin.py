@@ -31,7 +31,9 @@ class OrderAdmin(admin.ModelAdmin):
               'county',
               'delivery_cost',
               'order_total',
-              'grand_total'
+              'grand_total',
+              'original_bag',
+              'stripe_pid',
     )
 
     list_display = (
