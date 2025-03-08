@@ -199,6 +199,10 @@ input[name='q']::placeholder {
     display: none;
 }
 
+.allauth-form-inner-content input::placeholder {
+    color: #aab7c4;
+}
+
 .allauth-form-inner-content::placeholder {
     color: #aab7c4;
 }
