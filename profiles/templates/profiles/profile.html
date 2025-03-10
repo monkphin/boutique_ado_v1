@@ -47,7 +47,7 @@
                         </thead>
                         <tbody>
                             <tr>
-                                {% for orders in order %}
+                                {% for order in orders %}
                                     <tr>
                                         <td>
                                             <a href="{% url 'order_history' order.order_number %}" 
