@@ -29,7 +29,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-2&fau63*0ra4@mt9@_8u@+#=h1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG', 'False') == 'True'
 
-ALLOWED_HOSTS = ['darrenb-boutique-ado', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['darrenb-boutique-ado-62c8bdadb51d.herokuapp.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
