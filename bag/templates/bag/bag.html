@@ -25,7 +25,20 @@
         <div class="row">
             <div class="col">
                 {% if bag_items %}
-                    <div class="table-responsive rounded">
+                    <div class="display-block display-md-none">
+                        <div class="row">  
+                            <div class="col">
+                                {% include "bag/bag-total.html" %}
+                            </div>
+                    </div>
+                        <div class="row">
+                            <div class="col">
+                                {% include "bag/checkout-buttons.html" %}
+                                <p class="text-muted mb-5">A summary of your bag contents is below.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-responsive rounded d-none d0md-block">
                         <table class="table table-sm table-borderless">
                             <thead class="text-black">
                                 <tr>
