@@ -55,6 +55,13 @@
                             </div>
                             <div class="row"><div class="col"><hr></div></div>
                         {% endfor %}
+
+                        <div class="bnt-button shadow-sm rounded-0 border border-black">
+                            <a class="btt-link d-flex h-100">
+                                <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+                            </a>
+                        </div>
+
                     </div>
                     <div class="table-responsive rounded d-none d0md-block">
                         <table class="table table-sm table-borderless">
@@ -115,6 +122,11 @@
 
 {%  block postloadjs %}
 {{ block.super }}
+<script type="text/javascript">
+    $('.btt-link').click(function(e) {
+        window.scrollTo(0,0)
+    })
+</script>
 {% include 'products/includes/quantity_input_script.html' %}
 
 <script type ="text/javascript">
