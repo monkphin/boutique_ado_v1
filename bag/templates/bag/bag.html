@@ -58,7 +58,7 @@
                             {% endfor %}
                             <tr>
                                 <td colspan="5" class="pt-5 text-right">
-                                    {% include "bag/bag-total.html" %}
+                                    {% include "bag/bag-total.html" with total=total delivery=delivery grand_total=grand_total free_delivery_delta=free_delivery_delta %}
                                 </td>
                             </tr>
                             <tr>
